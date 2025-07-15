@@ -3,11 +3,51 @@
 
 <head>
     <title>Greeting App555</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            /* เขียว */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            /* เขียวเข้มเมื่อ hover */
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
     <h2>กรอกชื่อของคุณ</h2>
     <input type="text" id="nameInput" placeholder="ชื่อของคุณ" />
+    <br />
     <button onclick="greet()">ทักทาย</button>
     <p id="result"></p>
 
